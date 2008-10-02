@@ -1,0 +1,6 @@
+inherit qt4-qmake
+
+DESCRIPTION="Simple QtWebKit browser"
+HOMEPAGE="http://code.google.com/p/arora/"
+SRC_URI="http://arora.googlecode.com/files/${P}.tar.gz"
+PATCH_URI="0.4-defines.patch"

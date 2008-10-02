@@ -1,0 +1,23 @@
+--- origsrc/arora-0.4/src/src.pri	2008-09-30 20:17:22.000000000 -0500
++++ src/arora-0.4/src/src.pri	2008-10-01 23:55:35.177171900 -0500
+@@ -19,9 +19,9 @@
+     DEFINES += GITCHANGENUMBER=0
+ }
+ !win32 {
+-    GITVERSION=$$system(git log -n1 --pretty=format:%h)
++    GITVERSION=835b3b6
+     DEFINES += GITVERSION=\"\\\"$$GITVERSION\\\"\"
+-    GITCHANGENUMBER=$$system(git log --pretty=format:%h | wc -l)
++    GITCHANGENUMBER=387
+     DEFINES += GITCHANGENUMBER=\"\\\"$$GITCHANGENUMBER\\\"\"
+ }
+ 
+@@ -120,7 +120,7 @@
+ 
+ unix {
+     isEmpty(PREFIX) {
+-        PREFIX = /usr/local
++        PREFIX = /usr
+     }
+ 
+     BINDIR = $$PREFIX/bin

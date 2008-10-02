@@ -1,0 +1,86 @@
+arora
+------------------------------------------
+Arora is a simple cross platform web browser. Currently Arora is a very 
+basic browser whose feature list includes things like History and 
+Bookmarks. It was originally created as a demo for Qt to help test the 
+QtWebKit component and find API issues and bugs before the release.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libQtCore4-4.4.2-1
+  libQtGui4-4.4.2-1
+  libQtNetwork4-4.4.2-1
+  libQtWebKit4-4.4.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://code.google.com/p/arora/
+
+Canonical download:
+  http://arora.googlecode.com/files/
+
+-------------------------------------------
+
+Build instructions:
+  unpack arora-0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./arora-0.4-X.cygport all
+
+This will create:
+  /usr/src/arora-0.4-X-src.tar.bz2
+  /usr/src/arora-0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/arora.sh
+  /usr/bin/arora.exe
+  /usr/share/applications/arora.desktop
+  /usr/share/arora/locale/cs_CZ.qm
+  /usr/share/arora/locale/da.qm
+  /usr/share/arora/locale/de.qm
+  /usr/share/arora/locale/en.qm
+  /usr/share/arora/locale/es.qm
+  /usr/share/arora/locale/es_CR.qm
+  /usr/share/arora/locale/et.qm
+  /usr/share/arora/locale/fr_CA.qm
+  /usr/share/arora/locale/fr_FR.qm
+  /usr/share/arora/locale/gl.qm
+  /usr/share/arora/locale/he.qm
+  /usr/share/arora/locale/hu.qm
+  /usr/share/arora/locale/it.qm
+  /usr/share/arora/locale/nl.qm
+  /usr/share/arora/locale/pl.qm
+  /usr/share/arora/locale/pt_BR.qm
+  /usr/share/arora/locale/ru.qm
+  /usr/share/arora/locale/tr.qm
+  /usr/share/doc/arora-0.4/AUTHORS
+  /usr/share/doc/arora-0.4/ChangeLog
+  /usr/share/doc/arora-0.4/README
+  /usr/share/icons/hicolor/128x128/apps/arora.png
+  /usr/share/icons/hicolor/16x16/apps/arora.png
+  /usr/share/icons/hicolor/32x32/apps/arora.png
+  /usr/share/icons/hicolor/scalable/apps/arora.svg
+  /usr/share/man/man1/arora.1.gz
+  /usr/share/pixmaps/arora.xpm
+
+------------------
+
+Port Notes:
+
+----- version 0.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,5 +1,0 @@
-DESCRIPTION="Simple QtWebKit browser"
-HOMEPAGE="http://code.google.com/p/arora/"
-GIT_URI="git://github.com/Arora/arora.git"
-
-inherit git qt4-qmake
