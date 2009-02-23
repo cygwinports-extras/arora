@@ -1,0 +1,22 @@
+--- origsrc/arora-0.5/src/src.pri	2009-02-20 17:51:30.000000000 -0600
++++ src/arora-0.5/src/src.pri	2009-02-23 00:24:18.640625000 -0600
+@@ -19,10 +19,15 @@ win32 {
+     DEFINES += GITCHANGENUMBER=0
+ }
+ !win32 {
+-    GITVERSION=$$system(git log -n1 --pretty=format:%h)
+-    DEFINES += GITVERSION=\"\\\"$$GITVERSION\\\"\"
+-    GITCHANGENUMBER=$$system(git log --pretty=format:%h | wc -l)
+-    DEFINES += GITCHANGENUMBER=\"\\\"$$GITCHANGENUMBER\\\"\"
++    exists(.git) {
++        GITVERSION=$$system(git log -n1 --pretty=format:%h)
++        DEFINES += GITVERSION=\"\\\"$$GITVERSION\\\"\"
++        GITCHANGENUMBER=$$system(git log --pretty=format:%h | wc -l)
++        DEFINES += GITCHANGENUMBER=\"\\\"$$GITCHANGENUMBER\\\"\"
++    } else {
++        DEFINES += GITVERSION=0
++        DEFINES += GITCHANGENUMBER=0
++	}
+ }
+ 
+ FORMS += \
