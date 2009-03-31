@@ -6,19 +6,22 @@ Bookmarks. It was originally created as a demo for Qt to help test the
 QtWebKit component and find API issues and bugs before the release.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libQtCore4-4.4.3-2
-  libQtGui4-4.4.3-2
-  libQtNetwork4-4.4.3-2
-  libQtWebKit4-4.4.3-2
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libQtCore4-4.4.3-10
+  libQtGui4-4.4.3-10
+  libQtNetwork4-4.4.3-10
+  libQtSql4-4.4.3-10
+  libQtWebKit4-4.4.3-10
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.4-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://code.google.com/p/arora/
@@ -29,30 +32,34 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack arora-0.5-X-src.tar.bz2
+  unpack arora-0.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./arora-0.5-X.cygport all
+  cygport ./arora-0.6-X.cygport all
 
 This will create:
-  /usr/src/arora-0.5-X-src.tar.bz2
-  /usr/src/arora-0.5-X.tar.bz2
+  /usr/src/arora-0.6-X-src.tar.bz2
+  /usr/src/arora-0.6-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/arora.sh
+  /usr/bin/arora-placesimport.exe
   /usr/bin/arora.exe
+  /usr/bin/googlesuggest.exe
+  /usr/bin/htmlToXBel.exe
   /usr/share/applications/arora.desktop
   /usr/share/arora/locale/cs_CZ.qm
   /usr/share/arora/locale/da_DK.qm
   /usr/share/arora/locale/de_DE.qm
-  /usr/share/arora/locale/en_US.qm
+  /usr/share/arora/locale/el_GR.qm
   /usr/share/arora/locale/es.qm
   /usr/share/arora/locale/es_CR.qm
   /usr/share/arora/locale/et_EE.qm
+  /usr/share/arora/locale/fi_FI.qm
   /usr/share/arora/locale/fr_CA.qm
   /usr/share/arora/locale/fr_FR.qm
   /usr/share/arora/locale/gl.qm
@@ -69,9 +76,9 @@ Files included in the binary package:
   /usr/share/arora/locale/tr_TR.qm
   /usr/share/arora/locale/uk.qm
   /usr/share/arora/locale/zh_CN.qm
-  /usr/share/doc/arora-0.5/AUTHORS
-  /usr/share/doc/arora-0.5/ChangeLog
-  /usr/share/doc/arora-0.5/README
+  /usr/share/doc/arora/AUTHORS
+  /usr/share/doc/arora/ChangeLog
+  /usr/share/doc/arora/README
   /usr/share/icons/hicolor/128x128/apps/arora.png
   /usr/share/icons/hicolor/16x16/apps/arora.png
   /usr/share/icons/hicolor/32x32/apps/arora.png
@@ -83,11 +90,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.5-1 -----
-Version bump.
-
------ version 0.4-1 -----
-Initial release for Cygwin.
+----- version 0.6-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
