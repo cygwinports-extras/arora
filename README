@@ -6,13 +6,14 @@ Bookmarks. It was originally created as a demo for Qt to help test the
 QtWebKit component and find API issues and bugs before the release.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-49
   libgcc1-4.3.2-2
-  libQtCore4-4.4.3-10
-  libQtGui4-4.4.3-10
-  libQtNetwork4-4.4.3-10
-  libQtSql4-4.4.3-10
-  libQtWebKit4-4.4.3-10
+  libQtCore4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtNetwork4-4.5.1-1
+  libQtScript4-4.5.1-1
+  libQtSql4-4.5.1-1
+  libQtWebKit4-4.5.1-1
   libstdc++6-4.3.2-2
 
 Build requirements:
@@ -32,24 +33,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack arora-0.6-X-src.tar.bz2
+  unpack arora-0.7.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./arora-0.6-X.cygport all
+  cygport ./arora-0.7.1-X.cygport all
 
 This will create:
-  /usr/src/arora-0.6-X-src.tar.bz2
-  /usr/src/arora-0.6-X.tar.bz2
+  /usr/src/arora-0.7.1-X-src.tar.bz2
+  /usr/src/arora-0.7.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/arora.sh
+  /usr/bin/arora-cacheinfo.exe
   /usr/bin/arora-placesimport.exe
   /usr/bin/arora.exe
-  /usr/bin/googlesuggest.exe
   /usr/bin/htmlToXBel.exe
   /usr/share/applications/arora.desktop
   /usr/share/arora/locale/cs_CZ.qm
@@ -71,8 +72,11 @@ Files included in the binary package:
   /usr/share/arora/locale/nb_NO.qm
   /usr/share/arora/locale/nl_NL.qm
   /usr/share/arora/locale/pl_PL.qm
+  /usr/share/arora/locale/pt_BR.qm
   /usr/share/arora/locale/ru_RU.qm
   /usr/share/arora/locale/sk_SK.qm
+  /usr/share/arora/locale/sr_RS.qm
+  /usr/share/arora/locale/sr_RS@latin.qm
   /usr/share/arora/locale/tr_TR.qm
   /usr/share/arora/locale/uk.qm
   /usr/share/arora/locale/zh_CN.qm
@@ -89,6 +93,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.7.1-1 -----
+Version bump.
 
 ----- version 0.6-1 -----
 Initial release for Cygwin 1.7.
