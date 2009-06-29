@@ -1,5 +1,5 @@
 category: KDE Web
-requires: cygwin libgcc1 libQtCore4 libQtGui4 libQtNetwork4 libQtScript4 libQtSql4 libQtWebKit4 libstdc++6
+requires: libgcc1 libQtCore4 libQtGui4 libQtNetwork4 libQtScript4 libQtSql4 libQtWebKit4 libstdc++6
 sdesc: "Qt4 web browser"
 ldesc: "Arora is a simple cross platform web browser. Currently Arora is 
 a very basic browser whose feature list includes things like History and 
