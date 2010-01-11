@@ -6,22 +6,22 @@ Bookmarks. It was originally created as a demo for Qt to help test the
 QtWebKit component and find API issues and bugs before the release.
 
 Runtime requirements:
-  cygwin-1.7.0-62
-  libgcc1-4.3.4-1
-  libQtCore4-4.5.3-1
-  libQtGui4-4.5.3-1
-  libQtNetwork4-4.5.3-1
-  libQtScript4-4.5.3-1
-  libQtSql4-4.5.3-1
-  libQtWebKit4-4.5.3-1
-  libstdc++6-4.3.4-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libQtCore4-4.5.3-2
+  libQtGui4-4.5.3-2
+  libQtNetwork4-4.5.3-2
+  libQtScript4-4.5.3-2
+  libQtSql4-4.5.3-2
+  libQtWebKit4-4.5.3-2
+  libstdc++6-4.3.4-3
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-2.19.51-1
-  cygport-0.9.9-1
-  gcc4-core-4.3.4-1
-  gcc4-g++-4.3.4-1
+  cygport-0.9.80-1
+  gcc4-core-4.3.4-3
+  gcc4-g++-4.3.4-3
   make-3.81-2
 
 Canonical website:
@@ -33,19 +33,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack arora-0.10.1-X-src.tar.bz2
+  unpack arora-0.10.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./arora-0.10.1-X.cygport all
+  cygport ./arora-0.10.2-X.cygport all
 
 This will create:
-  /usr/src/arora-0.10.1-X-src.tar.bz2
-  /usr/src/arora-0.10.1-X.tar.bz2
+  /usr/src/arora-0.10.2-X-src.tar.bz2
+  /usr/src/arora-0.10.2-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.10.2-1 -----
+Version bump.
 
 ----- version 0.10.1-1 -----
 Version bump.
